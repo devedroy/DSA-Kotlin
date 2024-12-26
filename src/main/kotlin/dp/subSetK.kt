@@ -1,5 +1,7 @@
 package org.example.dp
 
+
+//Ref: https://youtu.be/eQCS_v3bw0Q?si=3DHt5p4ZLc_qGwrN
 fun subSetsK(idx:Int, holder:MutableList<Int>, currSum: Int, reqSum:Int, arr:IntArray) {
     if(idx == arr.size) {
         if(currSum == reqSum){
