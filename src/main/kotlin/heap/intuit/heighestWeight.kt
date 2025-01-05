@@ -15,10 +15,10 @@ k balls with the highest weights and calculate their total weight. If a weight h
 
 fun heightWeight(of :Int, count: IntArray) :Int {
     val maxHeap = PriorityQueue<Int>(compareByDescending { it })
-
     for (i in 0 until count.size) {
         maxHeap.add(count[i])
     }
+
     var totalWeight = 0
     var looper = of
     while (maxHeap.isNotEmpty() && looper-- > 0) {
